@@ -805,6 +805,7 @@ function loadSettings() {
 // ══════════════════════════════════════════════════════════
 //  PREDMETI
 // ══════════════════════════════════════════════════════════
+// NOVO
 function dodajPredmet() {
   const naziv = document.getElementById('inp-predmet-naziv').value.trim();
   const tip = document.getElementById('inp-predmet-tip').value;
@@ -815,13 +816,16 @@ function dodajPredmet() {
   appData.predmeti.push({ naziv, tip_kabineta: tip });
   save();
   renderPredmeti();
+  updateProfPredmetSelect();  // <-- DODANO
   document.getElementById('inp-predmet-naziv').value = '';
 }
 
+// NOVO
 function obrisiPredmet(idx) {
   appData.predmeti.splice(idx, 1);
   save();
   renderPredmeti();
+  updateProfPredmetSelect();  // <-- DODANO
 }
 
 function renderPredmeti() {
@@ -1264,12 +1268,14 @@ function handleImport(e) {
 // ══════════════════════════════════════════════════════════
 //  INIT
 // ══════════════════════════════════════════════════════════
+// NOVO
 function renderAll() {
   loadSettings();
   renderPredmeti();
   renderProfesori();
   renderKabineti();
   renderOdjeljenja();
+  updateProfPredmetSelect();  // <-- DODANO
 }
 
 // Startup
