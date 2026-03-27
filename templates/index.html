@@ -28,8 +28,6 @@ body {
   color: var(--text);
   min-height: 100vh;
 }
-
-/* ── Header ── */
 .header {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: white;
@@ -55,11 +53,7 @@ body {
   font-size: 13px;
   transition: 0.2s;
 }
-.header-actions button:hover {
-  background: rgba(255,255,255,0.25);
-}
-
-/* ── Tabs ── */
+.header-actions button:hover { background: rgba(255,255,255,0.25); }
 .tabs {
   display: flex;
   background: var(--card);
@@ -84,8 +78,6 @@ body {
   border-bottom-color: var(--primary);
   font-weight: 600;
 }
-
-/* ── Content ── */
 .content {
   max-width: 1200px;
   margin: 24px auto;
@@ -93,8 +85,6 @@ body {
 }
 .section { display: none; }
 .section.active { display: block; }
-
-/* ── Cards ── */
 .card {
   background: var(--card);
   border-radius: var(--radius);
@@ -114,8 +104,6 @@ body {
   color: var(--text2);
   margin: 16px 0 10px;
 }
-
-/* ── Forms ── */
 .form-row {
   display: flex;
   gap: 12px;
@@ -155,8 +143,6 @@ input[type="checkbox"] {
   width: 18px; height: 18px; cursor: pointer;
   flex: 0; min-width: 18px;
 }
-
-/* ── Buttons ── */
 .btn {
   padding: 10px 20px;
   border: none;
@@ -169,33 +155,17 @@ input[type="checkbox"] {
   align-items: center;
   gap: 6px;
 }
-.btn-primary {
-  background: var(--primary);
-  color: white;
-}
+.btn-primary { background: var(--primary); color: white; }
 .btn-primary:hover { background: var(--primary-dark); }
-.btn-success {
-  background: var(--success);
-  color: white;
-}
+.btn-success { background: var(--success); color: white; }
 .btn-success:hover { background: #388e3c; }
 .btn-danger {
-  background: var(--danger);
-  color: white;
-  padding: 6px 12px;
-  font-size: 12px;
+  background: var(--danger); color: white;
+  padding: 6px 12px; font-size: 12px;
 }
 .btn-danger:hover { background: #c62828; }
-.btn-sm {
-  padding: 6px 12px;
-  font-size: 12px;
-}
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* ── Tags/Chips ── */
+.btn-sm { padding: 6px 12px; font-size: 12px; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
 .chip {
   background: var(--primary-light);
@@ -209,166 +179,85 @@ input[type="checkbox"] {
   gap: 4px;
 }
 .chip .remove {
-  cursor: pointer;
-  font-weight: bold;
-  color: var(--danger);
-  margin-left: 4px;
+  cursor: pointer; font-weight: bold;
+  color: var(--danger); margin-left: 4px;
+  font-size: 16px;
 }
-
-/* ── Tables ── */
-.data-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 12px;
-}
+.data-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
 .data-table th {
-  background: var(--primary);
-  color: white;
-  padding: 10px 14px;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 600;
+  background: var(--primary); color: white;
+  padding: 10px 14px; text-align: left;
+  font-size: 13px; font-weight: 600;
 }
 .data-table td {
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
-  font-size: 13px;
+  padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 13px;
 }
 .data-table tr:hover { background: var(--primary-light); }
 .data-table tr:nth-child(even) { background: #fafbfc; }
-.data-table tr:nth-child(even):hover { background: var(--primary-light); }
-
-/* ── Schedule Table ── */
 .schedule-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
-  margin-top: 16px;
+  width: 100%; border-collapse: collapse;
+  font-size: 12px; margin-top: 16px;
 }
 .schedule-table th {
-  background: var(--primary);
-  color: white;
-  padding: 10px 8px;
-  font-weight: 600;
-  text-align: center;
+  background: var(--primary); color: white;
+  padding: 10px 8px; font-weight: 600; text-align: center;
 }
 .schedule-table td {
-  border: 1px solid var(--border);
-  padding: 6px 8px;
-  text-align: center;
-  vertical-align: top;
-  min-width: 140px;
+  border: 1px solid var(--border); padding: 6px 8px;
+  text-align: center; vertical-align: top; min-width: 140px;
 }
 .schedule-table td.cas-num {
-  background: var(--primary-dark);
-  color: white;
-  font-weight: 700;
-  min-width: 40px;
-  width: 40px;
+  background: var(--primary-dark); color: white;
+  font-weight: 700; min-width: 40px; width: 40px;
 }
-.schedule-cell { line-height: 1.4; }
-.schedule-cell .predmet {
-  font-weight: 700;
-  color: var(--primary-dark);
-}
-.schedule-cell .profesor {
-  font-size: 11px;
-  color: var(--text2);
-}
-.schedule-cell .kabinet {
-  font-size: 10px;
-  color: var(--accent);
-  font-weight: 600;
-}
+.schedule-cell .predmet { font-weight: 700; color: var(--primary-dark); }
+.schedule-cell .profesor { font-size: 11px; color: var(--text2); }
+.schedule-cell .kabinet { font-size: 10px; color: var(--accent); font-weight: 600; }
 .schedule-cell.empty { color: #ccc; }
-
-/* ── Availability Grid ── */
 .avail-grid {
   display: grid;
   grid-template-columns: auto repeat(5, 1fr);
-  gap: 2px;
-  margin: 10px 0;
-  font-size: 12px;
+  gap: 2px; margin: 10px 0; font-size: 12px;
 }
 .avail-grid .avail-header {
-  background: var(--primary);
-  color: white;
-  padding: 6px 8px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 11px;
+  background: var(--primary); color: white;
+  padding: 6px 8px; text-align: center;
+  font-weight: 600; font-size: 11px;
 }
 .avail-grid .avail-cell {
-  padding: 4px;
-  text-align: center;
-  background: var(--success);
-  color: white;
-  cursor: pointer;
-  font-size: 11px;
-  user-select: none;
-  border-radius: 2px;
+  padding: 4px; text-align: center;
+  background: var(--success); color: white;
+  cursor: pointer; font-size: 11px;
+  user-select: none; border-radius: 2px;
 }
-.avail-grid .avail-cell.unavailable {
-  background: var(--danger);
-}
+.avail-grid .avail-cell.unavailable { background: var(--danger); }
 .avail-grid .avail-label {
-  padding: 4px 8px;
-  font-weight: 600;
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
+  padding: 4px 8px; font-weight: 600;
+  background: #f0f0f0; display: flex; align-items: center;
 }
-
-/* ── Fond casova ── */
-.fond-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 12px;
-}
+.fond-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
 .fond-table th {
-  background: var(--primary);
-  color: white;
-  padding: 8px;
-  font-size: 12px;
+  background: var(--primary); color: white; padding: 8px; font-size: 12px;
 }
-.fond-table td {
-  padding: 4px;
-  border: 1px solid var(--border);
-  text-align: center;
-}
+.fond-table td { padding: 4px; border: 1px solid var(--border); text-align: center; }
 .fond-table input {
-  width: 50px;
-  text-align: center;
-  padding: 6px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  width: 50px; text-align: center; padding: 6px;
+  border: 1px solid var(--border); border-radius: 4px;
 }
 .fond-table .row-label {
-  text-align: left;
-  padding: 8px;
-  font-weight: 600;
-  background: #f9f9f9;
-  font-size: 13px;
+  text-align: left; padding: 8px; font-weight: 600;
+  background: #f9f9f9; font-size: 13px;
 }
-
-/* ── Loading ── */
 .loading-overlay {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
+  display: none; position: fixed; top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0,0,0,0.6); z-index: 1000;
+  justify-content: center; align-items: center;
 }
 .loading-overlay.show { display: flex; }
 .loading-box {
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 400px;
+  background: white; padding: 40px;
+  border-radius: 16px; text-align: center; max-width: 400px;
 }
 .spinner {
   width: 50px; height: 50px;
@@ -379,36 +268,27 @@ input[type="checkbox"] {
   margin: 0 auto 20px;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-
-/* ── Alert ── */
 .alert {
-  padding: 12px 16px;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  padding: 12px 16px; border-radius: 8px;
+  margin-bottom: 16px; font-size: 14px;
+  display: flex; align-items: center; gap: 8px;
 }
 .alert-info { background: var(--primary-light); color: var(--primary-dark); }
 .alert-warn { background: #fff3e0; color: #e65100; }
 .alert-danger { background: #ffebee; color: #c62828; }
 .alert-success { background: #e8f5e9; color: #2e7d32; }
-
-.empty-state {
-  text-align: center;
-  padding: 40px;
-  color: var(--text2);
-}
+.empty-state { text-align: center; padding: 40px; color: var(--text2); }
 .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
-
-/* ── Print ── */
+.debug-info {
+  background: #fff3e0; border: 1px solid #ffe0b2;
+  padding: 8px 12px; border-radius: 6px;
+  font-size: 12px; color: #e65100; margin: 8px 0;
+}
 @media print {
   .header, .tabs, .no-print { display: none !important; }
   .content { max-width: 100%; margin: 0; padding: 0; }
   .section { display: block !important; }
   .card { box-shadow: none; page-break-inside: avoid; }
-  .schedule-table { font-size: 10px; }
 }
 @media (max-width: 768px) {
   .form-row { flex-direction: column; }
@@ -421,19 +301,17 @@ input[type="checkbox"] {
 </head>
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <div>
     <h1>📅 Školski Raspored Generator</h1>
     <div class="subtitle">Automatsko generisanje rasporeda pomoću AI</div>
   </div>
   <div class="header-actions">
-    <button onclick="exportData()">💾 Sačuvaj podatke</button>
-    <button onclick="importData()">📂 Učitaj podatke</button>
+    <button onclick="exportData()">💾 Sačuvaj</button>
+    <button onclick="importData()">📂 Učitaj</button>
   </div>
 </div>
 
-<!-- TABS -->
 <div class="tabs no-print">
   <div class="tab active" onclick="showTab('postavke')">⚙️ Postavke</div>
   <div class="tab" onclick="showTab('predmeti')">📚 Predmeti</div>
@@ -444,10 +322,9 @@ input[type="checkbox"] {
   <div class="tab" onclick="showTab('raspored')">📋 Raspored</div>
 </div>
 
-<!-- CONTENT -->
 <div class="content">
 
-  <!-- ═══ POSTAVKE ═══ -->
+  <!-- POSTAVKE -->
   <div id="sec-postavke" class="section active">
     <div class="card">
       <h2>⚙️ Osnovne postavke</h2>
@@ -460,47 +337,25 @@ input[type="checkbox"] {
       </div>
       <h3>Radni dani</h3>
       <div class="chips" id="dani-chips">
-        <label class="chip">
-          <input type="checkbox" checked onchange="saveSettings()"
-                 value="Ponedjeljak"> Ponedjeljak
-        </label>
-        <label class="chip">
-          <input type="checkbox" checked onchange="saveSettings()"
-                 value="Utorak"> Utorak
-        </label>
-        <label class="chip">
-          <input type="checkbox" checked onchange="saveSettings()"
-                 value="Srijeda"> Srijeda
-        </label>
-        <label class="chip">
-          <input type="checkbox" checked onchange="saveSettings()"
-                 value="Cetvrtak"> Četvrtak
-        </label>
-        <label class="chip">
-          <input type="checkbox" checked onchange="saveSettings()"
-                 value="Petak"> Petak
-        </label>
-        <label class="chip">
-          <input type="checkbox" onchange="saveSettings()"
-                 value="Subota"> Subota
-        </label>
-      </div>
-      <div class="alert alert-info" style="margin-top:16px">
-        💡 Postavke se automatski čuvaju u browseru.
-        Koristi dugmad "Sačuvaj/Učitaj" za backup svih podataka.
+        <label class="chip"><input type="checkbox" checked onchange="saveSettings()" value="Ponedjeljak"> Ponedjeljak</label>
+        <label class="chip"><input type="checkbox" checked onchange="saveSettings()" value="Utorak"> Utorak</label>
+        <label class="chip"><input type="checkbox" checked onchange="saveSettings()" value="Srijeda"> Srijeda</label>
+        <label class="chip"><input type="checkbox" checked onchange="saveSettings()" value="Cetvrtak"> Četvrtak</label>
+        <label class="chip"><input type="checkbox" checked onchange="saveSettings()" value="Petak"> Petak</label>
+        <label class="chip"><input type="checkbox" onchange="saveSettings()" value="Subota"> Subota</label>
       </div>
     </div>
   </div>
 
-  <!-- ═══ PREDMETI ═══ -->
+  <!-- PREDMETI -->
   <div id="sec-predmeti" class="section">
     <div class="card">
       <h2>📚 Predmeti</h2>
       <div class="form-row">
         <div class="form-group">
           <label>Naziv predmeta</label>
-          <input type="text" id="inp-predmet-naziv"
-                 placeholder="npr. Matematika">
+          <input type="text" id="inp-predmet-naziv" placeholder="npr. Matematika"
+                 onkeydown="if(event.key==='Enter') dodajPredmet()">
         </div>
         <div class="form-group" style="max-width:200px">
           <label>Tip kabineta (opciono)</label>
@@ -514,37 +369,32 @@ input[type="checkbox"] {
         </div>
         <div class="form-group" style="flex:0">
           <label>&nbsp;</label>
-          <button class="btn btn-primary" onclick="dodajPredmet()">
-            + Dodaj
-          </button>
+          <button class="btn btn-primary" onclick="dodajPredmet()">+ Dodaj</button>
         </div>
       </div>
-      <table class="data-table" id="tbl-predmeti">
-        <thead>
-          <tr>
-            <th>Naziv</th>
-            <th>Tip kabineta</th>
-            <th style="width:80px">Akcija</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div id="wrap-tbl-predmeti">
+        <table class="data-table" id="tbl-predmeti">
+          <thead><tr><th>Naziv</th><th>Tip kabineta</th><th style="width:80px">Akcija</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <div class="empty-state" id="empty-predmeti">
-        <div class="icon">📚</div>
-        Nema dodanih predmeta
+        <div class="icon">📚</div>Nema dodanih predmeta
       </div>
     </div>
   </div>
 
-  <!-- ═══ PROFESORI ═══ -->
+  <!-- PROFESORI -->
   <div id="sec-profesori" class="section">
     <div class="card">
       <h2>👨‍🏫 Profesori</h2>
+
+      <div id="prof-debug" class="debug-info"></div>
+
       <div class="form-row">
         <div class="form-group">
           <label>Ime i prezime</label>
-          <input type="text" id="inp-prof-ime"
-                 placeholder="npr. Hodžić Amila">
+          <input type="text" id="inp-prof-ime" placeholder="npr. Hodžić Amila">
         </div>
         <div class="form-group" style="flex:0; min-width:160px">
           <label>Status</label>
@@ -554,61 +404,52 @@ input[type="checkbox"] {
           </select>
         </div>
       </div>
+
       <div class="form-row">
         <div class="form-group">
-          <label>Predmeti koje predaje</label>
+          <label>Predmeti koje predaje (izaberi i klikni +)</label>
           <select id="inp-prof-predmet">
-            <option value="">-- Izaberi --</option>
+            <option value="">-- Prvo dodaj predmete na tabu Predmeti --</option>
           </select>
         </div>
         <div class="form-group" style="flex:0">
           <label>&nbsp;</label>
-          <button class="btn btn-sm btn-primary"
-                  onclick="dodajProfPredmet()">+</button>
+          <button class="btn btn-sm btn-primary" onclick="dodajProfPredmet()">+ Dodaj predmet</button>
         </div>
       </div>
-      <div class="chips" id="prof-predmeti-chips"></div>
+
+      <div id="prof-predmeti-chips" class="chips"></div>
 
       <div id="avail-section" style="display:none">
-        <h3>Nedostupnost (klikni na termine kad profesor
-            NIJE dostupan — crveno)</h3>
+        <h3>Nedostupnost (klikni termine kad profesor NIJE dostupan — crveno)</h3>
         <div class="avail-grid" id="avail-grid"></div>
       </div>
 
       <div style="margin-top:16px">
-        <button class="btn btn-primary" onclick="dodajProfesora()">
-          + Dodaj profesora
-        </button>
+        <button class="btn btn-success" onclick="dodajProfesora()">✅ Sačuvaj profesora</button>
       </div>
 
-      <table class="data-table" id="tbl-profesori">
-        <thead>
-          <tr>
-            <th>Ime</th>
-            <th>Status</th>
-            <th>Predmeti</th>
-            <th>Nedostupan</th>
-            <th style="width:80px">Akcija</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div id="wrap-tbl-profesori" style="margin-top:20px">
+        <table class="data-table" id="tbl-profesori">
+          <thead><tr><th>Ime</th><th>Status</th><th>Predmeti</th><th>Nedostupan</th><th style="width:80px">Akcija</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <div class="empty-state" id="empty-profesori">
-        <div class="icon">👨‍🏫</div>
-        Nema dodanih profesora
+        <div class="icon">👨‍🏫</div>Nema dodanih profesora
       </div>
     </div>
   </div>
 
-  <!-- ═══ KABINETI ═══ -->
+  <!-- KABINETI -->
   <div id="sec-kabineti" class="section">
     <div class="card">
       <h2>🏫 Kabineti / Učionice</h2>
       <div class="form-row">
         <div class="form-group">
           <label>Oznaka kabineta</label>
-          <input type="text" id="inp-kab-naziv"
-                 placeholder="npr. K1, Lab-Fizika, Sala">
+          <input type="text" id="inp-kab-naziv" placeholder="npr. K1, Lab-Fizika"
+                 onkeydown="if(event.key==='Enter') dodajKabinet()">
         </div>
         <div class="form-group" style="max-width:200px">
           <label>Tip</label>
@@ -622,92 +463,76 @@ input[type="checkbox"] {
         </div>
         <div class="form-group" style="flex:0">
           <label>&nbsp;</label>
-          <button class="btn btn-primary" onclick="dodajKabinet()">
-            + Dodaj
-          </button>
+          <button class="btn btn-primary" onclick="dodajKabinet()">+ Dodaj</button>
         </div>
       </div>
-      <table class="data-table" id="tbl-kabineti">
-        <thead>
-          <tr>
-            <th>Oznaka</th>
-            <th>Tip</th>
-            <th style="width:80px">Akcija</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div id="wrap-tbl-kabineti">
+        <table class="data-table" id="tbl-kabineti">
+          <thead><tr><th>Oznaka</th><th>Tip</th><th style="width:80px">Akcija</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <div class="empty-state" id="empty-kabineti">
-        <div class="icon">🏫</div>
-        Nema dodanih kabineta
+        <div class="icon">🏫</div>Nema dodanih kabineta
       </div>
     </div>
   </div>
 
-  <!-- ═══ ODJELJENJA ═══ -->
+  <!-- ODJELJENJA -->
   <div id="sec-odjeljenja" class="section">
     <div class="card">
       <h2>🎓 Odjeljenja</h2>
       <div class="form-row">
         <div class="form-group">
           <label>Naziv odjeljenja</label>
-          <input type="text" id="inp-odj-naziv"
-                 placeholder="npr. I-1, II-3, III-2">
+          <input type="text" id="inp-odj-naziv" placeholder="npr. I-1, II-3"
+                 onkeydown="if(event.key==='Enter') dodajOdjeljenje()">
         </div>
         <div class="form-group" style="flex:0">
           <label>&nbsp;</label>
-          <button class="btn btn-primary" onclick="dodajOdjeljenje()">
-            + Dodaj
-          </button>
+          <button class="btn btn-primary" onclick="dodajOdjeljenje()">+ Dodaj</button>
         </div>
       </div>
       <div class="chips" id="odjeljenja-chips"></div>
       <div class="alert alert-info" style="margin-top:12px">
-        💡 Nakon dodavanja odjeljenja, idi na tab
-        "📊 Fond časova" da postaviš broj časova
-        po predmetu za svako odjeljenje.
+        💡 Nakon dodavanja odjeljenja, idi na tab "📊 Fond časova"
       </div>
     </div>
   </div>
 
-  <!-- ═══ FOND ČASOVA ═══ -->
+  <!-- FOND ČASOVA -->
   <div id="sec-fond" class="section">
     <div class="card">
       <h2>📊 Fond časova (sedmično po odjeljenju)</h2>
       <div class="alert alert-info">
-        Unesi broj časova sedmično za svaki predmet u svakom
-        odjeljenju. Ostavi 0 ako odjeljenje nema taj predmet.
+        Unesi broj časova sedmično za svaki predmet u svakom odjeljenju.
       </div>
       <div id="fond-container"></div>
       <div class="empty-state" id="empty-fond">
-        <div class="icon">📊</div>
-        Dodaj predmete i odjeljenja prvo
+        <div class="icon">📊</div>Dodaj predmete i odjeljenja prvo
       </div>
     </div>
   </div>
 
-  <!-- ═══ RASPORED ═══ -->
+  <!-- RASPORED -->
   <div id="sec-raspored" class="section">
     <div class="card no-print">
       <h2>📋 Generiši raspored</h2>
       <div class="alert alert-info">
-        Provjerite da ste unijeli sve podatke: predmete, profesore,
-        kabinete, odjeljenja i fond časova. AI će generisati
-        optimalan raspored.
+        Provjerite sve podatke pa kliknite dugme ispod.
       </div>
-      <div style="display:flex; gap:12px; flex-wrap:wrap">
-        <button class="btn btn-success" id="btn-generate"
-                onclick="generiši()">
+      <div id="gen-summary"></div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px">
+        <button class="btn btn-success" id="btn-generate" onclick="generisi()">
           🤖 Generiši raspored
         </button>
         <button class="btn btn-primary" onclick="window.print()"
-                style="display:none" id="btn-print">
-          🖨️ Štampaj
-        </button>
+                style="display:none" id="btn-print">🖨️ Štampaj</button>
       </div>
     </div>
     <div id="raspored-rezultat"></div>
   </div>
+
 </div>
 
 <!-- LOADING -->
@@ -715,21 +540,17 @@ input[type="checkbox"] {
   <div class="loading-box">
     <div class="spinner"></div>
     <h3>🤖 AI generiše raspored...</h3>
-    <p style="color:#666; margin-top:8px">
-      Ovo može potrajati 30-90 sekundi
-    </p>
+    <p style="color:#666; margin-top:8px">Ovo može potrajati 30-90 sekundi</p>
   </div>
 </div>
 
-<!-- IMPORT FILE INPUT -->
-<input type="file" id="file-import" accept=".json"
-       style="display:none" onchange="handleImport(event)">
+<input type="file" id="file-import" accept=".json" style="display:none" onchange="handleImport(event)">
 
 <script>
-// ══════════════════════════════════════════════════════════
-//  DATA
-// ══════════════════════════════════════════════════════════
-const STORAGE_KEY = 'skolski_raspored_data';
+// ══════════════════════════════════════════════════
+//  PODACI
+// ══════════════════════════════════════════════════
+const STORAGE_KEY = 'skolski_raspored_v2';
 
 let appData = {
   predmeti: [],
@@ -747,129 +568,198 @@ let tempProfPredmeti = [];
 let tempNedostupan = {};
 
 function save() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
-}
-
-function load() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (raw) {
-    try {
-      appData = JSON.parse(raw);
-      if (!appData.fond_casova) appData.fond_casova = {};
-      if (!appData.postavke) appData.postavke = {
-        dani: ['Ponedjeljak','Utorak','Srijeda','Cetvrtak','Petak'],
-        broj_casova: 7
-      };
-    } catch(e) { console.error(e); }
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+  } catch(e) {
+    console.error('Save error:', e);
   }
 }
 
-// ══════════════════════════════════════════════════════════
-//  TABS
-// ══════════════════════════════════════════════════════════
-function showTab(name) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('sec-' + name).classList.add('active');
-  const tabs = document.querySelectorAll('.tab');
-  const names = ['postavke','predmeti','profesori','kabineti',
-                 'odjeljenja','fond','raspored'];
-  const idx = names.indexOf(name);
-  if (idx >= 0 && tabs[idx]) tabs[idx].classList.add('active');
-
-  if (name === 'profesori') updateProfPredmetSelect();
-  if (name === 'fond') renderFond();
+function load() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      appData.predmeti = parsed.predmeti || [];
+      appData.profesori = parsed.profesori || [];
+      appData.kabineti = parsed.kabineti || [];
+      appData.odjeljenja = parsed.odjeljenja || [];
+      appData.fond_casova = parsed.fond_casova || {};
+      appData.postavke = parsed.postavke || {
+        dani: ['Ponedjeljak','Utorak','Srijeda','Cetvrtak','Petak'],
+        broj_casova: 7
+      };
+    }
+  } catch(e) {
+    console.error('Load error:', e);
+  }
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
+//  TABS
+// ══════════════════════════════════════════════════
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(function(s) {
+    s.classList.remove('active');
+  });
+  document.querySelectorAll('.tab').forEach(function(t) {
+    t.classList.remove('active');
+  });
+
+  var sec = document.getElementById('sec-' + name);
+  if (sec) sec.classList.add('active');
+
+  var names = ['postavke','predmeti','profesori','kabineti','odjeljenja','fond','raspored'];
+  var idx = names.indexOf(name);
+  var tabs = document.querySelectorAll('.tab');
+  if (idx >= 0 && tabs[idx]) tabs[idx].classList.add('active');
+
+  // Svaki put kad se otvori tab profesori, osvježi dropdown
+  if (name === 'profesori') {
+    updateProfPredmetSelect();
+    updateProfDebug();
+  }
+  if (name === 'fond') renderFond();
+  if (name === 'raspored') updateGenSummary();
+}
+
+// ══════════════════════════════════════════════════
 //  POSTAVKE
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 function saveSettings() {
-  const checks = document.querySelectorAll('#dani-chips input[type=checkbox]');
+  var checks = document.querySelectorAll('#dani-chips input[type=checkbox]');
   appData.postavke.dani = [];
-  checks.forEach(c => { if (c.checked) appData.postavke.dani.push(c.value); });
-  appData.postavke.broj_casova =
-    parseInt(document.getElementById('inp-broj-casova').value) || 7;
+  checks.forEach(function(c) {
+    if (c.checked) appData.postavke.dani.push(c.value);
+  });
+  appData.postavke.broj_casova = parseInt(document.getElementById('inp-broj-casova').value) || 7;
   save();
 }
 
 function loadSettings() {
-  document.getElementById('inp-broj-casova').value =
-    appData.postavke.broj_casova || 7;
-  const checks = document.querySelectorAll('#dani-chips input[type=checkbox]');
-  checks.forEach(c => {
+  document.getElementById('inp-broj-casova').value = appData.postavke.broj_casova || 7;
+  var checks = document.querySelectorAll('#dani-chips input[type=checkbox]');
+  checks.forEach(function(c) {
     c.checked = appData.postavke.dani.includes(c.value);
   });
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  PREDMETI
-// ══════════════════════════════════════════════════════════
-// NOVO
+// ══════════════════════════════════════════════════
 function dodajPredmet() {
-  const naziv = document.getElementById('inp-predmet-naziv').value.trim();
-  const tip = document.getElementById('inp-predmet-tip').value;
-  if (!naziv) return alert('Unesi naziv predmeta');
-  if (appData.predmeti.find(p => p.naziv === naziv))
-    return alert('Predmet već postoji');
+  var naziv = document.getElementById('inp-predmet-naziv').value.trim();
+  var tip = document.getElementById('inp-predmet-tip').value;
 
-  appData.predmeti.push({ naziv, tip_kabineta: tip });
+  if (!naziv) { alert('Unesi naziv predmeta!'); return; }
+
+  for (var i = 0; i < appData.predmeti.length; i++) {
+    if (appData.predmeti[i].naziv === naziv) {
+      alert('Predmet "' + naziv + '" već postoji!');
+      return;
+    }
+  }
+
+  appData.predmeti.push({ naziv: naziv, tip_kabineta: tip });
   save();
   renderPredmeti();
-  updateProfPredmetSelect();  // <-- DODANO
+  updateProfPredmetSelect();
   document.getElementById('inp-predmet-naziv').value = '';
+  document.getElementById('inp-predmet-naziv').focus();
 }
 
-// NOVO
 function obrisiPredmet(idx) {
+  if (!confirm('Obrisati predmet "' + appData.predmeti[idx].naziv + '"?')) return;
   appData.predmeti.splice(idx, 1);
   save();
   renderPredmeti();
-  updateProfPredmetSelect();  // <-- DODANO
+  updateProfPredmetSelect();
 }
 
 function renderPredmeti() {
-  const tbody = document.querySelector('#tbl-predmeti tbody');
-  const empty = document.getElementById('empty-predmeti');
+  var tbody = document.querySelector('#tbl-predmeti tbody');
+  var empty = document.getElementById('empty-predmeti');
+  var wrap = document.getElementById('wrap-tbl-predmeti');
 
-  if (!appData.predmeti.length) {
+  if (appData.predmeti.length === 0) {
     tbody.innerHTML = '';
     empty.style.display = 'block';
-    document.getElementById('tbl-predmeti').style.display = 'none';
+    wrap.style.display = 'none';
     return;
   }
-  empty.style.display = 'none';
-  document.getElementById('tbl-predmeti').style.display = 'table';
 
-  tbody.innerHTML = appData.predmeti.map((p, i) => `
-    <tr>
-      <td><strong>${p.naziv}</strong></td>
-      <td>${p.tip_kabineta || 'Bilo koji'}</td>
-      <td>
-        <button class="btn btn-danger btn-sm"
-                onclick="obrisiPredmet(${i})">🗑️</button>
-      </td>
-    </tr>
-  `).join('');
+  empty.style.display = 'none';
+  wrap.style.display = 'block';
+
+  var html = '';
+  for (var i = 0; i < appData.predmeti.length; i++) {
+    var p = appData.predmeti[i];
+    html += '<tr>';
+    html += '<td><strong>' + p.naziv + '</strong></td>';
+    html += '<td>' + (p.tip_kabineta || 'Bilo koji') + '</td>';
+    html += '<td><button class="btn btn-danger btn-sm" onclick="obrisiPredmet(' + i + ')">🗑️</button></td>';
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  PROFESORI
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 function updateProfPredmetSelect() {
-  const sel = document.getElementById('inp-prof-predmet');
-  sel.innerHTML = '<option value="">-- Izaberi --</option>';
-  appData.predmeti.forEach(p => {
-    sel.innerHTML += `<option value="${p.naziv}">${p.naziv}</option>`;
-  });
+  var sel = document.getElementById('inp-prof-predmet');
+  if (!sel) return;
+
+  sel.innerHTML = '';
+
+  if (appData.predmeti.length === 0) {
+    sel.innerHTML = '<option value="">⚠️ Prvo dodaj predmete na tabu "Predmeti"</option>';
+  } else {
+    sel.innerHTML = '<option value="">-- Izaberi predmet --</option>';
+    for (var i = 0; i < appData.predmeti.length; i++) {
+      var opt = document.createElement('option');
+      opt.value = appData.predmeti[i].naziv;
+      opt.textContent = appData.predmeti[i].naziv;
+      sel.appendChild(opt);
+    }
+  }
+
+  updateProfDebug();
+}
+
+function updateProfDebug() {
+  var el = document.getElementById('prof-debug');
+  if (!el) return;
+
+  if (appData.predmeti.length === 0) {
+    el.innerHTML = '⚠️ <strong>Nema predmeta!</strong> Idi na tab "📚 Predmeti" i dodaj predmete prvo.';
+    el.style.display = 'block';
+  } else {
+    el.innerHTML = '✅ Dostupni predmeti: <strong>' + appData.predmeti.map(function(p) { return p.naziv; }).join(', ') + '</strong>';
+    el.style.display = 'block';
+    el.style.background = '#e8f5e9';
+    el.style.borderColor = '#c8e6c9';
+    el.style.color = '#2e7d32';
+  }
 }
 
 function dodajProfPredmet() {
-  const sel = document.getElementById('inp-prof-predmet');
-  const val = sel.value;
-  if (!val || tempProfPredmeti.includes(val)) return;
+  var sel = document.getElementById('inp-prof-predmet');
+  var val = sel.value;
+
+  if (!val) {
+    alert('Izaberi predmet iz padajuće liste!');
+    return;
+  }
+
+  if (tempProfPredmeti.indexOf(val) !== -1) {
+    alert('Predmet "' + val + '" je već dodan!');
+    return;
+  }
+
   tempProfPredmeti.push(val);
   renderProfPredmetChips();
+  sel.value = '';
 }
 
 function ukloniProfPredmet(idx) {
@@ -878,17 +768,24 @@ function ukloniProfPredmet(idx) {
 }
 
 function renderProfPredmetChips() {
-  document.getElementById('prof-predmeti-chips').innerHTML =
-    tempProfPredmeti.map((p, i) =>
-      `<span class="chip">${p}
-         <span class="remove" onclick="ukloniProfPredmet(${i})">×</span>
-       </span>`
-    ).join('');
+  var container = document.getElementById('prof-predmeti-chips');
+  if (tempProfPredmeti.length === 0) {
+    container.innerHTML = '<span style="color:#999; font-size:13px">Nema odabranih predmeta za ovog profesora</span>';
+    return;
+  }
+
+  var html = '';
+  for (var i = 0; i < tempProfPredmeti.length; i++) {
+    html += '<span class="chip">' + tempProfPredmeti[i];
+    html += ' <span class="remove" onclick="ukloniProfPredmet(' + i + ')">×</span>';
+    html += '</span>';
+  }
+  container.innerHTML = html;
 }
 
 function toggleAvail() {
-  const status = document.getElementById('inp-prof-status').value;
-  const section = document.getElementById('avail-section');
+  var status = document.getElementById('inp-prof-status').value;
+  var section = document.getElementById('avail-section');
   if (status === 'eksterni') {
     section.style.display = 'block';
     renderAvailGrid();
@@ -898,167 +795,201 @@ function toggleAvail() {
 }
 
 function renderAvailGrid() {
-  const dani = appData.postavke.dani;
-  const casovi = appData.postavke.broj_casova;
-  const grid = document.getElementById('avail-grid');
+  var dani = appData.postavke.dani;
+  var casovi = appData.postavke.broj_casova;
+  var grid = document.getElementById('avail-grid');
 
-  let html = '<div class="avail-header"></div>';
-  dani.forEach(d => {
-    html += `<div class="avail-header">${d.substring(0,3)}</div>`;
-  });
+  grid.style.gridTemplateColumns = 'auto repeat(' + dani.length + ', 1fr)';
 
-  for (let c = 1; c <= casovi; c++) {
-    html += `<div class="avail-label">${c}. čas</div>`;
-    dani.forEach(d => {
-      const key = `${d}-${c}`;
-      const unavail = tempNedostupan[key] || false;
-      html += `<div class="avail-cell ${unavail ? 'unavailable' : ''}"
-                   onclick="toggleSlot('${key}', this)"
-                   data-key="${key}">
-                ${unavail ? '✗' : '✓'}
-               </div>`;
-    });
+  var html = '<div class="avail-header">Čas</div>';
+  for (var d = 0; d < dani.length; d++) {
+    html += '<div class="avail-header">' + dani[d].substring(0,3) + '</div>';
+  }
+
+  for (var c = 1; c <= casovi; c++) {
+    html += '<div class="avail-label">' + c + '. čas</div>';
+    for (var d = 0; d < dani.length; d++) {
+      var key = dani[d] + '-' + c;
+      var unavail = tempNedostupan[key] || false;
+      html += '<div class="avail-cell ' + (unavail ? 'unavailable' : '') + '"';
+      html += ' onclick="toggleSlot(\'' + key + '\', this)"';
+      html += '>' + (unavail ? '✗' : '✓') + '</div>';
+    }
   }
   grid.innerHTML = html;
 }
 
 function toggleSlot(key, el) {
   tempNedostupan[key] = !tempNedostupan[key];
-  el.classList.toggle('unavailable');
-  el.textContent = tempNedostupan[key] ? '✗' : '✓';
+  if (tempNedostupan[key]) {
+    el.classList.add('unavailable');
+    el.textContent = '✗';
+  } else {
+    el.classList.remove('unavailable');
+    el.textContent = '✓';
+  }
 }
 
 function dodajProfesora() {
-  const ime = document.getElementById('inp-prof-ime').value.trim();
-  const status = document.getElementById('inp-prof-status').value;
+  var ime = document.getElementById('inp-prof-ime').value.trim();
+  var status = document.getElementById('inp-prof-status').value;
 
-  if (!ime) return alert('Unesi ime profesora');
-  if (!tempProfPredmeti.length) return alert('Dodaj barem jedan predmet');
+  if (!ime) {
+    alert('Unesi ime profesora!');
+    return;
+  }
 
-  const prof = {
-    ime,
+  if (tempProfPredmeti.length === 0) {
+    alert('Moraš dodati barem jedan predmet profesoru!\n\n1. Izaberi predmet iz padajuće liste\n2. Klikni "+ Dodaj predmet"\n3. Pa onda klikni "Sačuvaj profesora"');
+    return;
+  }
+
+  var prof = {
+    ime: ime,
     eksterni: status === 'eksterni',
-    predmeti: [...tempProfPredmeti],
+    predmeti: tempProfPredmeti.slice(),
     nedostupan: {}
   };
 
   if (status === 'eksterni') {
-    const dani = appData.postavke.dani;
-    dani.forEach(d => {
-      const nedostupniCasovi = [];
-      for (let c = 1; c <= appData.postavke.broj_casova; c++) {
-        if (tempNedostupan[`${d}-${c}`]) nedostupniCasovi.push(c);
+    var dani = appData.postavke.dani;
+    for (var d = 0; d < dani.length; d++) {
+      var nedostupniCasovi = [];
+      for (var c = 1; c <= appData.postavke.broj_casova; c++) {
+        if (tempNedostupan[dani[d] + '-' + c]) {
+          nedostupniCasovi.push(c);
+        }
       }
-      if (nedostupniCasovi.length) prof.nedostupan[d] = nedostupniCasovi;
-    });
+      if (nedostupniCasovi.length > 0) {
+        prof.nedostupan[dani[d]] = nedostupniCasovi;
+      }
+    }
   }
 
   appData.profesori.push(prof);
   save();
   renderProfesori();
 
-  // Reset form
+  // Reset forma
   document.getElementById('inp-prof-ime').value = '';
   document.getElementById('inp-prof-status').value = 'stalni';
   tempProfPredmeti = [];
   tempNedostupan = {};
   renderProfPredmetChips();
   document.getElementById('avail-section').style.display = 'none';
+
+  alert('Profesor "' + ime + '" uspješno dodan!');
 }
 
 function obrisiProfesora(idx) {
+  if (!confirm('Obrisati profesora "' + appData.profesori[idx].ime + '"?')) return;
   appData.profesori.splice(idx, 1);
   save();
   renderProfesori();
 }
 
 function renderProfesori() {
-  const tbody = document.querySelector('#tbl-profesori tbody');
-  const empty = document.getElementById('empty-profesori');
+  var tbody = document.querySelector('#tbl-profesori tbody');
+  var empty = document.getElementById('empty-profesori');
+  var wrap = document.getElementById('wrap-tbl-profesori');
 
-  if (!appData.profesori.length) {
+  if (appData.profesori.length === 0) {
     tbody.innerHTML = '';
     empty.style.display = 'block';
-    document.getElementById('tbl-profesori').style.display = 'none';
+    wrap.style.display = 'none';
     return;
   }
-  empty.style.display = 'none';
-  document.getElementById('tbl-profesori').style.display = 'table';
 
-  tbody.innerHTML = appData.profesori.map((p, i) => {
-    const nedostStr = Object.entries(p.nedostupan || {})
-      .map(([d, c]) => `${d.substring(0,3)}: ${c.join(',')}. čas`)
-      .join('; ') || '-';
-    return `<tr>
-      <td><strong>${p.ime}</strong></td>
-      <td>${p.eksterni
-            ? '<span style="color:var(--warn)">⚡ Eksterni</span>'
-            : '✅ Stalni'}</td>
-      <td>${p.predmeti.join(', ')}</td>
-      <td style="font-size:11px">${nedostStr}</td>
-      <td>
-        <button class="btn btn-danger btn-sm"
-                onclick="obrisiProfesora(${i})">🗑️</button>
-      </td>
-    </tr>`;
-  }).join('');
+  empty.style.display = 'none';
+  wrap.style.display = 'block';
+
+  var html = '';
+  for (var i = 0; i < appData.profesori.length; i++) {
+    var p = appData.profesori[i];
+    var nedostStr = '-';
+    var entries = Object.entries(p.nedostupan || {});
+    if (entries.length > 0) {
+      nedostStr = entries.map(function(e) {
+        return e[0].substring(0,3) + ': ' + e[1].join(',') + '. čas';
+      }).join('; ');
+    }
+
+    html += '<tr>';
+    html += '<td><strong>' + p.ime + '</strong></td>';
+    html += '<td>' + (p.eksterni ? '<span style="color:var(--warn)">⚡ Eksterni</span>' : '✅ Stalni') + '</td>';
+    html += '<td>' + p.predmeti.join(', ') + '</td>';
+    html += '<td style="font-size:11px">' + nedostStr + '</td>';
+    html += '<td><button class="btn btn-danger btn-sm" onclick="obrisiProfesora(' + i + ')">🗑️</button></td>';
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  KABINETI
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 function dodajKabinet() {
-  const naziv = document.getElementById('inp-kab-naziv').value.trim();
-  const tip = document.getElementById('inp-kab-tip').value;
-  if (!naziv) return alert('Unesi oznaku kabineta');
-  if (appData.kabineti.find(k => k.naziv === naziv))
-    return alert('Kabinet već postoji');
+  var naziv = document.getElementById('inp-kab-naziv').value.trim();
+  var tip = document.getElementById('inp-kab-tip').value;
+  if (!naziv) { alert('Unesi oznaku kabineta!'); return; }
 
-  appData.kabineti.push({ naziv, tip });
+  for (var i = 0; i < appData.kabineti.length; i++) {
+    if (appData.kabineti[i].naziv === naziv) {
+      alert('Kabinet već postoji!');
+      return;
+    }
+  }
+
+  appData.kabineti.push({ naziv: naziv, tip: tip });
   save();
   renderKabineti();
   document.getElementById('inp-kab-naziv').value = '';
 }
 
 function obrisiKabinet(idx) {
+  if (!confirm('Obrisati kabinet?')) return;
   appData.kabineti.splice(idx, 1);
   save();
   renderKabineti();
 }
 
 function renderKabineti() {
-  const tbody = document.querySelector('#tbl-kabineti tbody');
-  const empty = document.getElementById('empty-kabineti');
+  var tbody = document.querySelector('#tbl-kabineti tbody');
+  var empty = document.getElementById('empty-kabineti');
+  var wrap = document.getElementById('wrap-tbl-kabineti');
 
-  if (!appData.kabineti.length) {
+  if (appData.kabineti.length === 0) {
     tbody.innerHTML = '';
     empty.style.display = 'block';
-    document.getElementById('tbl-kabineti').style.display = 'none';
+    wrap.style.display = 'none';
     return;
   }
-  empty.style.display = 'none';
-  document.getElementById('tbl-kabineti').style.display = 'table';
 
-  tbody.innerHTML = appData.kabineti.map((k, i) => `
-    <tr>
-      <td><strong>${k.naziv}</strong></td>
-      <td>${k.tip || 'Obična učionica'}</td>
-      <td>
-        <button class="btn btn-danger btn-sm"
-                onclick="obrisiKabinet(${i})">🗑️</button>
-      </td>
-    </tr>
-  `).join('');
+  empty.style.display = 'none';
+  wrap.style.display = 'block';
+
+  var html = '';
+  for (var i = 0; i < appData.kabineti.length; i++) {
+    var k = appData.kabineti[i];
+    html += '<tr>';
+    html += '<td><strong>' + k.naziv + '</strong></td>';
+    html += '<td>' + (k.tip || 'Obična učionica') + '</td>';
+    html += '<td><button class="btn btn-danger btn-sm" onclick="obrisiKabinet(' + i + ')">🗑️</button></td>';
+    html += '</tr>';
+  }
+  tbody.innerHTML = html;
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  ODJELJENJA
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 function dodajOdjeljenje() {
-  const naziv = document.getElementById('inp-odj-naziv').value.trim();
-  if (!naziv) return alert('Unesi naziv odjeljenja');
-  if (appData.odjeljenja.includes(naziv))
-    return alert('Odjeljenje već postoji');
+  var naziv = document.getElementById('inp-odj-naziv').value.trim();
+  if (!naziv) { alert('Unesi naziv odjeljenja!'); return; }
+  if (appData.odjeljenja.indexOf(naziv) !== -1) {
+    alert('Odjeljenje već postoji!');
+    return;
+  }
 
   appData.odjeljenja.push(naziv);
   if (!appData.fond_casova[naziv]) appData.fond_casova[naziv] = {};
@@ -1068,7 +999,8 @@ function dodajOdjeljenje() {
 }
 
 function obrisiOdjeljenje(idx) {
-  const naziv = appData.odjeljenja[idx];
+  var naziv = appData.odjeljenja[idx];
+  if (!confirm('Obrisati odjeljenje "' + naziv + '"?')) return;
   appData.odjeljenja.splice(idx, 1);
   delete appData.fond_casova[naziv];
   save();
@@ -1076,46 +1008,49 @@ function obrisiOdjeljenje(idx) {
 }
 
 function renderOdjeljenja() {
-  const container = document.getElementById('odjeljenja-chips');
-  container.innerHTML = appData.odjeljenja.map((o, i) =>
-    `<span class="chip" style="font-size:14px; padding:8px 16px">
-       🎓 ${o}
-       <span class="remove" onclick="obrisiOdjeljenje(${i})">×</span>
-     </span>`
-  ).join('');
+  var container = document.getElementById('odjeljenja-chips');
+  var html = '';
+  for (var i = 0; i < appData.odjeljenja.length; i++) {
+    html += '<span class="chip" style="font-size:14px; padding:8px 16px">';
+    html += '🎓 ' + appData.odjeljenja[i];
+    html += ' <span class="remove" onclick="obrisiOdjeljenje(' + i + ')">×</span>';
+    html += '</span>';
+  }
+  container.innerHTML = html || '<span style="color:#999">Nema dodanih odjeljenja</span>';
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  FOND ČASOVA
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 function renderFond() {
-  const container = document.getElementById('fond-container');
-  const empty = document.getElementById('empty-fond');
+  var container = document.getElementById('fond-container');
+  var empty = document.getElementById('empty-fond');
 
-  if (!appData.predmeti.length || !appData.odjeljenja.length) {
+  if (appData.predmeti.length === 0 || appData.odjeljenja.length === 0) {
     container.innerHTML = '';
     empty.style.display = 'block';
     return;
   }
   empty.style.display = 'none';
 
-  let html = '<table class="fond-table"><thead><tr>';
-  html += '<th>Predmet</th>';
-  appData.odjeljenja.forEach(o => { html += `<th>${o}</th>`; });
+  var html = '<table class="fond-table"><thead><tr><th>Predmet</th>';
+  for (var o = 0; o < appData.odjeljenja.length; o++) {
+    html += '<th>' + appData.odjeljenja[o] + '</th>';
+  }
   html += '</tr></thead><tbody>';
 
-  appData.predmeti.forEach(p => {
-    html += `<tr><td class="row-label">${p.naziv}</td>`;
-    appData.odjeljenja.forEach(o => {
-      if (!appData.fond_casova[o]) appData.fond_casova[o] = {};
-      const val = appData.fond_casova[o][p.naziv] || 0;
-      html += `<td>
-        <input type="number" min="0" max="15" value="${val}"
-               onchange="updateFond('${o}','${p.naziv}', this.value)">
-      </td>`;
-    });
+  for (var p = 0; p < appData.predmeti.length; p++) {
+    var pred = appData.predmeti[p];
+    html += '<tr><td class="row-label">' + pred.naziv + '</td>';
+    for (var o = 0; o < appData.odjeljenja.length; o++) {
+      var odj = appData.odjeljenja[o];
+      if (!appData.fond_casova[odj]) appData.fond_casova[odj] = {};
+      var val = appData.fond_casova[odj][pred.naziv] || 0;
+      html += '<td><input type="number" min="0" max="15" value="' + val + '"';
+      html += ' onchange="updateFond(\'' + odj + '\',\'' + pred.naziv + '\', this.value)"></td>';
+    }
     html += '</tr>';
-  });
+  }
   html += '</tbody></table>';
   container.innerHTML = html;
 }
@@ -1126,18 +1061,29 @@ function updateFond(odj, pred, val) {
   save();
 }
 
-// ══════════════════════════════════════════════════════════
-//  GENERISANJE RASPOREDA
-// ══════════════════════════════════════════════════════════
-async function generiši() {
-  const btn = document.getElementById('btn-generate');
-  const loading = document.getElementById('loading');
+// ══════════════════════════════════════════════════
+//  GENERISANJE
+// ══════════════════════════════════════════════════
+function updateGenSummary() {
+  var el = document.getElementById('gen-summary');
+  var html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:8px">';
+  html += '<div class="alert ' + (appData.predmeti.length ? 'alert-success' : 'alert-danger') + '">📚 Predmeti: ' + appData.predmeti.length + '</div>';
+  html += '<div class="alert ' + (appData.profesori.length ? 'alert-success' : 'alert-danger') + '">👨‍🏫 Profesori: ' + appData.profesori.length + '</div>';
+  html += '<div class="alert ' + (appData.kabineti.length ? 'alert-success' : 'alert-danger') + '">🏫 Kabineti: ' + appData.kabineti.length + '</div>';
+  html += '<div class="alert ' + (appData.odjeljenja.length ? 'alert-success' : 'alert-danger') + '">🎓 Odjeljenja: ' + appData.odjeljenja.length + '</div>';
+  html += '</div>';
+  el.innerHTML = html;
+}
+
+async function generisi() {
+  var btn = document.getElementById('btn-generate');
+  var loading = document.getElementById('loading');
 
   btn.disabled = true;
   loading.classList.add('show');
 
   try {
-    const payload = {
+    var payload = {
       profesori: appData.profesori,
       predmeti: appData.predmeti,
       odjeljenja: appData.odjeljenja,
@@ -1146,13 +1092,13 @@ async function generiši() {
       fond_casova: appData.fond_casova
     };
 
-    const resp = await fetch('/generate', {
+    var resp = await fetch('/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     });
 
-    const result = await resp.json();
+    var result = await resp.json();
 
     if (!result.success) {
       throw new Error(result.error || 'Nepoznata greška');
@@ -1161,9 +1107,8 @@ async function generiši() {
     renderRaspored(result.data);
     document.getElementById('btn-print').style.display = 'inline-flex';
 
-  } catch (e) {
+  } catch(e) {
     alert('Greška: ' + e.message);
-    console.error(e);
   } finally {
     btn.disabled = false;
     loading.classList.remove('show');
@@ -1171,54 +1116,62 @@ async function generiši() {
 }
 
 function renderRaspored(data) {
-  const container = document.getElementById('raspored-rezultat');
-  const raspored = data.raspored || data;
-  const dani = appData.postavke.dani;
-  const brojCasova = appData.postavke.broj_casova;
+  var container = document.getElementById('raspored-rezultat');
+  var raspored = data.raspored || data;
+  var dani = appData.postavke.dani;
+  var brojCasova = appData.postavke.broj_casova;
 
-  let html = '';
+  var html = '';
 
-  // Napomene
   if (data.napomene && data.napomene.length) {
     html += '<div class="card"><h2>📝 Napomene</h2>';
-    data.napomene.forEach(n => {
-      html += `<div class="alert alert-warn">⚠️ ${n}</div>`;
-    });
+    for (var n = 0; n < data.napomene.length; n++) {
+      html += '<div class="alert alert-warn">⚠️ ' + data.napomene[n] + '</div>';
+    }
     html += '</div>';
   }
 
-  // Za svako odjeljenje tabela
-  for (const [odjeljenje, daniData] of Object.entries(raspored)) {
-    html += `<div class="card">
-      <h2>🎓 ${odjeljenje}</h2>
-      <table class="schedule-table">
-        <thead>
-          <tr><th>Čas</th>`;
+  var odjKeys = Object.keys(raspored);
+  for (var oi = 0; oi < odjKeys.length; oi++) {
+    var odjeljenje = odjKeys[oi];
+    var daniData = raspored[odjeljenje];
 
-    dani.forEach(d => { html += `<th>${d}</th>`; });
+    html += '<div class="card"><h2>🎓 ' + odjeljenje + '</h2>';
+    html += '<table class="schedule-table"><thead><tr><th>Čas</th>';
+    for (var d = 0; d < dani.length; d++) {
+      html += '<th>' + dani[d] + '</th>';
+    }
     html += '</tr></thead><tbody>';
 
-    for (let c = 1; c <= brojCasova; c++) {
-      html += `<tr><td class="cas-num">${c}.</td>`;
-      dani.forEach(d => {
-        const danKey = Object.keys(daniData || {}).find(
-          k => k.toLowerCase().startsWith(d.substring(0,3).toLowerCase())
-        ) || d;
-        const casovi = daniData[danKey] || [];
-        const cas = casovi.find(x => x.cas === c);
+    for (var c = 1; c <= brojCasova; c++) {
+      html += '<tr><td class="cas-num">' + c + '.</td>';
+      for (var d = 0; d < dani.length; d++) {
+        var danKey = null;
+        var dKeys = Object.keys(daniData || {});
+        for (var dk = 0; dk < dKeys.length; dk++) {
+          if (dKeys[dk].toLowerCase().substring(0,3) === dani[d].substring(0,3).toLowerCase()) {
+            danKey = dKeys[dk];
+            break;
+          }
+        }
+        if (!danKey) danKey = dani[d];
+
+        var casovi = daniData[danKey] || [];
+        var cas = null;
+        for (var ci = 0; ci < casovi.length; ci++) {
+          if (casovi[ci].cas === c) { cas = casovi[ci]; break; }
+        }
 
         if (cas && cas.predmet && cas.predmet !== '-') {
-          html += `<td>
-            <div class="schedule-cell">
-              <div class="predmet">${cas.predmet}</div>
-              <div class="profesor">${cas.profesor || ''}</div>
-              <div class="kabinet">${cas.kabinet || ''}</div>
-            </div>
-          </td>`;
+          html += '<td><div class="schedule-cell">';
+          html += '<div class="predmet">' + cas.predmet + '</div>';
+          html += '<div class="profesor">' + (cas.profesor || '') + '</div>';
+          html += '<div class="kabinet">' + (cas.kabinet || '') + '</div>';
+          html += '</div></td>';
         } else {
           html += '<td><div class="schedule-cell empty">—</div></td>';
         }
-      });
+      }
       html += '</tr>';
     }
     html += '</tbody></table></div>';
@@ -1227,16 +1180,13 @@ function renderRaspored(data) {
   container.innerHTML = html;
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  IMPORT / EXPORT
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 function exportData() {
-  const blob = new Blob(
-    [JSON.stringify(appData, null, 2)],
-    { type: 'application/json' }
-  );
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
+  var blob = new Blob([JSON.stringify(appData, null, 2)], { type: 'application/json' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
   a.href = url;
   a.download = 'raspored_podaci.json';
   a.click();
@@ -1248,39 +1198,47 @@ function importData() {
 }
 
 function handleImport(e) {
-  const file = e.target.files[0];
+  var file = e.target.files[0];
   if (!file) return;
-  const reader = new FileReader();
+  var reader = new FileReader();
   reader.onload = function(ev) {
     try {
-      appData = JSON.parse(ev.target.result);
+      var parsed = JSON.parse(ev.target.result);
+      appData.predmeti = parsed.predmeti || [];
+      appData.profesori = parsed.profesori || [];
+      appData.kabineti = parsed.kabineti || [];
+      appData.odjeljenja = parsed.odjeljenja || [];
+      appData.fond_casova = parsed.fond_casova || {};
+      appData.postavke = parsed.postavke || appData.postavke;
       save();
       renderAll();
       alert('Podaci uspješno učitani!');
     } catch(err) {
-      alert('Neispravan JSON fajl');
+      alert('Neispravan JSON fajl!');
     }
   };
   reader.readAsText(file);
   e.target.value = '';
 }
 
-// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════
 //  INIT
-// ══════════════════════════════════════════════════════════
-// NOVO
+// ══════════════════════════════════════════════════
 function renderAll() {
   loadSettings();
   renderPredmeti();
   renderProfesori();
   renderKabineti();
   renderOdjeljenja();
-  updateProfPredmetSelect();  // <-- DODANO
+  updateProfPredmetSelect();
+  renderProfPredmetChips();
 }
 
-// Startup
+// Pokreni
 load();
 renderAll();
+
+console.log('Aplikacija učitana. Predmeti:', appData.predmeti.length, 'Profesori:', appData.profesori.length);
 </script>
 </body>
 </html>
